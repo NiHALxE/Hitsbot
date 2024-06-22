@@ -4,6 +4,8 @@ import json
 import timeit
 from bot import bot
 from utils import retry_request, send_api_request_with_details, BOT_ID 
+from keep_alive import keep_alive
+keep_alive() 
 
 def calculate_days_left(end_date_str):
     try:
